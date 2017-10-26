@@ -1,0 +1,161 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Header Files\Shader Loader">
+      <UniqueIdentifier>{63cc751d-0c5f-4ef8-8ad5-baa5ff4655a5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Shader Loader">
+      <UniqueIdentifier>{12e7d253-9891-44b6-a760-deeb371afce5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Matrix Classes">
+      <UniqueIdentifier>{6bbd0ff3-454d-4677-a21a-15cd6c580401}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Matrix Classes">
+      <UniqueIdentifier>{2fb898d5-126c-469f-a4ca-7232966fec2d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Vector Classes">
+      <UniqueIdentifier>{2640b790-b2a7-42bf-a279-46dcc0d3e69a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Camera Classes">
+      <UniqueIdentifier>{a0507636-816a-4d55-97b2-151f2ed858b3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Camera Classes">
+      <UniqueIdentifier>{4b9e7112-87c7-4143-ad1e-14360172ba75}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Engine Files">
+      <UniqueIdentifier>{a1960242-df04-4c51-a4fe-c4bdba6599a7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\Shaders">
+      <UniqueIdentifier>{b058b678-770a-4bba-a2e7-da3cfb89d6f5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Vector Classes">
+      <UniqueIdentifier>{c74611d0-8dde-45c2-9707-ff46dfd64d4d}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="B_2D_Player.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ObjLoad.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Shiny_Boxes.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="B_Mat2.h">
+      <Filter>Header Files\Matrix Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="B_Mat3.h">
+      <Filter>Header Files\Matrix Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="B_Mat4.h">
+      <Filter>Header Files\Matrix Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="B_Vec2.h">
+      <Filter>Header Files\Vector Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="B_Vec3.h">
+      <Filter>Header Files\Vector Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="Camera2D.h">
+      <Filter>Header Files\Camera Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="Camera3D.h">
+      <Filter>Header Files\Camera Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="B_Vec4.h">
+      <Filter>Header Files\Vector Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine.h">
+      <Filter>Header Files\Engine Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GLSLShader.h">
+      <Filter>Header Files\Shader Loader</Filter>
+    </ClInclude>
+    <ClInclude Include="B_Window.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="prefabShapes.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="B_VertexBufferObj.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="B_Textures.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="B_2D_Player.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ObjLoad.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Shiny_Boxes.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="B_Mat2.cpp">
+      <Filter>Source Files\Matrix Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="B_Mat3.cpp">
+      <Filter>Source Files\Matrix Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="B_Mat4.cpp">
+      <Filter>Source Files\Matrix Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="B_Vec2.cpp">
+      <Filter>Source Files\Vector Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="B_Vec3.cpp">
+      <Filter>Source Files\Vector Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="Camera2D.cpp">
+      <Filter>Source Files\Camera Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="Camera3D.cpp">
+      <Filter>Source Files\Camera Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="B_Vec4.cpp">
+      <Filter>Source Files\Vector Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="GLSLShader.cpp">
+      <Filter>Source Files\Shader Loader</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="B_Window.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="prefabShapes.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="B_VertexBufferObj.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="B_Textures.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Shaders\passthru_v_fragmentshader.vert">
+      <Filter>Resource Files\Shaders</Filter>
+    </None>
+    <None Include="Shaders\passthru_f_fragmentshader.frag">
+      <Filter>Resource Files\Shaders</Filter>
+    </None>
+  </ItemGroup>
+</Project>

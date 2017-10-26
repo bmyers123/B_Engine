@@ -1,0 +1,133 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="B_2D_Player.h" />
+    <ClInclude Include="B_Mat2.h" />
+    <ClInclude Include="B_Mat3.h" />
+    <ClInclude Include="B_Mat4.h" />
+    <ClInclude Include="B_Textures.h" />
+    <ClInclude Include="B_Vec2.h" />
+    <ClInclude Include="B_Vec3.h" />
+    <ClInclude Include="B_Vec4.h" />
+    <ClInclude Include="B_VertexBufferObj.h" />
+    <ClInclude Include="B_Window.h" />
+    <ClInclude Include="Camera2D.h" />
+    <ClInclude Include="Camera3D.h" />
+    <ClInclude Include="Engine.h" />
+    <ClInclude Include="GLSLShader.h" />
+    <ClInclude Include="ObjLoad.h" />
+    <ClInclude Include="prefabShapes.h" />
+    <ClInclude Include="Shiny_Boxes.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="B_2D_Player.cpp" />
+    <ClCompile Include="B_Mat2.cpp" />
+    <ClCompile Include="B_Mat3.cpp" />
+    <ClCompile Include="B_Mat4.cpp" />
+    <ClCompile Include="B_Textures.cpp" />
+    <ClCompile Include="B_Vec2.cpp" />
+    <ClCompile Include="B_Vec3.cpp" />
+    <ClCompile Include="B_Vec4.cpp" />
+    <ClCompile Include="B_VertexBufferObj.cpp" />
+    <ClCompile Include="B_Window.cpp" />
+    <ClCompile Include="Camera2D.cpp" />
+    <ClCompile Include="Camera3D.cpp" />
+    <ClCompile Include="GLSLShader.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="ObjLoad.cpp" />
+    <ClCompile Include="prefabShapes.cpp" />
+    <ClCompile Include="Shiny_Boxes.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Shaders\passthru_f_fragmentshader.frag" />
+    <None Include="Shaders\passthru_v_fragmentshader.vert" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{8586CBE0-CDCD-4829-9329-D3C4C5CC7C13}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>B_Engine</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <IncludePath>$(VCInstallDir)include;$(VCInstallDir)atlmfc\include;$(WindowsSdkDir)include;$(FrameworkSDKDir)\include;</IncludePath>
+    <LibraryPath>$(VCInstallDir)lib;$(VCInstallDir)atlmfc\lib;$(WindowsSdkDir)lib;$(FrameworkSDKDir)\lib</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>SFML_STATIC;GLEW_STATIC;WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\100485066\Desktop\B_Engine\B_Engine\includes;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>C:\Program Files %28x86%29\freeglut\lib;C:\Users\100485066\Desktop\B_Engine\B_Engine\Shaders;C:\Users\100485066\Desktop\B_Engine\B_Engine\libfiles;C:\Users\100485066\Desktop\B_Engine\B_Engine\includes\FMod;C:\Users\100485066\Desktop\B_Engine\B_Engine\includes\Fmodapi;C:\Users\100485066\Desktop\B_Engine\B_Engine\includes\GLee;C:\Users\100485066\Desktop\B_Engine\B_Engine\includes\SFML;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>sfml-graphics-s-d.lib;sfml-window-s-d.lib;sfml-system-s-d.lib;glew32.lib;freeglut.lib;freeglutd.lib;GLee.lib;GLU32.lib;glut32.lib;glu32.lib;opengl32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <IgnoreSpecificDefaultLibraries>LIBC.lib</IgnoreSpecificDefaultLibraries>
+      <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
+      <TargetMachine>MachineX86</TargetMachine>
+      <NoEntryPoint>false</NoEntryPoint>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>SFML_DYNAMIC;WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\100485066\Documents\Visual Studio 2010\Projects\B_Engine\B_Engine\includes;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalLibraryDirectories>C:\Users\100485066\Documents\Visual Studio 2010\Projects\B_Engine\B_Engine\lib files;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>ShaderLoader.lib;sfml-graphics-s.lib;sfml-window-s.lib;sfml-system-s.lib;GLee.lib;glu32.lib;glut32.lib;glew32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
